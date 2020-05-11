@@ -1,4 +1,7 @@
 package complex;
 
-public class Factory {
+import common.DependencyException;
+
+public interface Factory<E> {
+    E create(Object... parameters) throws DependencyException;
 }
