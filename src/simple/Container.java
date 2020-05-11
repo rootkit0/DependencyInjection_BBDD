@@ -9,8 +9,9 @@ public class Container implements Injector {
     //Estructures de dades
     private HashMap<String, Object> constants;
     private HashMap<String, Factory> factories;
-    private HashMap<String, String[]> dependencies;
     private HashMap<String, Factory> singleton;
+    private HashMap<String, String[]> dependencies;
+
 
     public Container() {
         //Inicialitzem les estructures
@@ -59,29 +60,29 @@ public class Container implements Injector {
             return this.constants.get(name);
         }
         else if(this.factories.containsKey(name)) {
-            return this.createFactory(name);
+            return this.createFactory(name, factories);
         }
         else if(this.singleton.containsKey(name)) {
-            return this.createSingletonFactory(name);
+            return this.createFactory(name, singleton);
         }
         else {
             throw new DependencyException(name + " is not registered");
         }
     }
 
-    //Metodes auxiliars
-    private Object createFactory(String name) throws DependencyException {
+    //Metode auxiliars
+    private Object createFactory(String name, HashMap<String, Factory> hashMap) throws DependencyException {
         try {
-
-        }
-        catch(DependencyException e) {
-            throw new DependencyException(e);
-        }
-    }
-
-    private Object createSingletonFactory(String name) throws DependencyException {
-        try {
-
+            //Obtenim la factoria a crear
+            Factory creator = hashMap.get(name);
+            //Obtenim les dependencies de la factoria
+            int num_dependencies = this.dependencies.get(name).length;
+            Object[] dependencies = new Object[num_dependencies];
+            for(int i=0; i<num_dependencies; ++i) {
+                dependencies[i] = this.getObject(this.dependencies.get(name)[i]);
+            }
+            //Cridem al metode create amb les dependencies obtingudes
+            return creator.create(dependencies);
         }
         catch(DependencyException e) {
             throw new DependencyException(e);
