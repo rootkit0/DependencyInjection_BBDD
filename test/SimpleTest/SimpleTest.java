@@ -133,6 +133,7 @@ public class SimpleTest {
         System.out.println("------- Finished TEST8 -------");
     }
 
+    //Test9: Testejar quan registrem dos cops la mateixa Constant
     @Test(expected = DependencyException.class)
     public void twoTimesSameConstant() throws DependencyException {
         System.out.println("------- Running TEST9 -------");
@@ -141,6 +142,7 @@ public class SimpleTest {
         System.out.println("------- Finished TEST9 -------");
     }
 
+    //Test10: Testejar quan registrem dos cops la mateixa Factory
     @Test(expected = DependencyException.class)
     public void twoTimesSameFactory() throws DependencyException {
         System.out.println("------- Running TEST10 -------");
@@ -149,7 +151,7 @@ public class SimpleTest {
         System.out.println("------- Finished TEST10 -------");
     }
 
-    //Test9: Testejar si FactoryA1 es registra correctament utilitzant singletons i obtenim la instancia correcta
+    //Test11: Testejar si FactoryA1 es registra correctament utilitzant singletons i obtenim la instancia correcta
     @Test
     public void registerA1Singleton() throws DependencyException {
         System.out.println("------- Running TEST11 -------");
@@ -164,7 +166,7 @@ public class SimpleTest {
         System.out.println("------- Finished TEST11 -------");
     }
 
-    //Test10: Testejar si FactoryB1 es registra correctament utilitzant singletons i obtenim la instancia correcta
+    //Test12: Testejar si FactoryB1 es registra correctament utilitzant singletons i obtenim la instancia correcta
     @Test
     public void registerB1Singleton() throws DependencyException {
         System.out.println("------- Running TEST12 -------");
@@ -178,7 +180,7 @@ public class SimpleTest {
         System.out.println("------- Finished TEST12 -------");
     }
 
-    //Test11: Testejar si FactoryC1 es registra correctament utilitzant singletons i obtenim la instancia correcta
+    //Test13: Testejar si FactoryC1 es registra correctament utilitzant singletons i obtenim la instancia correcta
     @Test
     public void registerC1Singleton() throws DependencyException {
         System.out.println("------- Running TEST13 -------");
@@ -191,7 +193,7 @@ public class SimpleTest {
         System.out.println("------- Finished TEST13 -------");
     }
 
-    //Test12: Testejar si FactoryD1 es registra correctament utilitzant singletons i obtenim la instancia correcta
+    //Test14: Testejar si FactoryD1 es registra correctament utilitzant singletons i obtenim la instancia correcta
     @Test
     public void registerD1Singleton() throws DependencyException {
         System.out.println("------- Running TEST14 -------");
