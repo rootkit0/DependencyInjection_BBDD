@@ -12,7 +12,6 @@ public class Container implements Injector {
     private HashMap<String, simple.Factory> singleton;
     private HashMap<String, String[]> dependencies;
 
-
     public Container() {
         this.constants = new HashMap<>();
         this.factories = new HashMap<>();
