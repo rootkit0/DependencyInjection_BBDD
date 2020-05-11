@@ -1,6 +1,6 @@
-package test.Implementations;
+package Implementations;
 
-import test.Interfaces.InterfaceC;
+import Interfaces.InterfaceC;
 
 public class ImplementationC1 implements InterfaceC {
     public final String s;

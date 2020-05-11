@@ -1,10 +1,10 @@
-package test.ComplexTests;
+package ComplexTests;
 
 import common.DependencyException;
 import complex.Factory;
-import test.Implementations.ImplementationD1;
+import Implementations.ImplementationD1;
 
-public class FactoryD1 implements Factory {
+public class FactoryD1FactoryD1 implements Factory {
     @Override
     public Object create(Object... parameters) throws DependencyException {
         int i;

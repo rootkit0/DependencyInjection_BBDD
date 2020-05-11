@@ -1,4 +1,4 @@
-package test.SimpleTests;
+package SimpleTests;
 
 public class SimpleTest {
 }

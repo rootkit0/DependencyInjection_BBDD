@@ -1,7 +1,7 @@
-package test.Implementations;
+package Implementations;
 
-import test.Interfaces.InterfaceB;
-import test.Interfaces.InterfaceD;
+import Interfaces.InterfaceB;
+import Interfaces.InterfaceD;
 
 public class ImplementationB1 implements InterfaceB {
     public final InterfaceD d;

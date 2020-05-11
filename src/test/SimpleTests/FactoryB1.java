@@ -1,10 +1,10 @@
-package test.SimpleTests;
+package SimpleTests;
 
 import common.DependencyException;
 import simple.Factory;
-import test.Implementations.ImplementationB1;
-import test.Implementations.ImplementationD1;
-import test.Interfaces.InterfaceD;
+import Implementations.ImplementationB1;
+import Implementations.ImplementationD1;
+import Interfaces.InterfaceD;
 
 public class FactoryB1 implements Factory {
     @Override

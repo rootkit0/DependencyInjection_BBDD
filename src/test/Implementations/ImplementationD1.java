@@ -1,6 +1,6 @@
-package test.Implementations;
+package Implementations;
 
-import test.Interfaces.InterfaceD;
+import Interfaces.InterfaceD;
 
 public class ImplementationD1  implements InterfaceD {
     public final int i;

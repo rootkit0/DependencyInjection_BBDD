@@ -1,4 +1,4 @@
-package test.ComplexTests;
+package ComplexTests;
 
 public class ComplexTest {
 }

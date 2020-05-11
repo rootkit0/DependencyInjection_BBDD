@@ -1,8 +1,8 @@
-package test.Implementations;
+package Implementations;
 
-import test.Interfaces.InterfaceA;
-import test.Interfaces.InterfaceB;
-import test.Interfaces.InterfaceC;
+import Interfaces.InterfaceA;
+import Interfaces.InterfaceB;
+import Interfaces.InterfaceC;
 
 public class ImplementationA1 implements InterfaceA {
     public final InterfaceB b;

@@ -1,4 +1,4 @@
-package test.Interfaces;
+package Interfaces;
 
 public interface InterfaceC {
 }

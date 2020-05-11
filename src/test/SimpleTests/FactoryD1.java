@@ -1,8 +1,8 @@
-package test.SimpleTests;
+package SimpleTests;
 
 import common.DependencyException;
 import simple.Factory;
-import test.Implementations.ImplementationD1;
+import Implementations.ImplementationD1;
 
 public class FactoryD1 implements Factory {
     @Override

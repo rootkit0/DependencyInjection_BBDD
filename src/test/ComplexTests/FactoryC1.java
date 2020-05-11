@@ -1,8 +1,8 @@
-package test.ComplexTests;
+package ComplexTests;
 
 import common.DependencyException;
 import complex.Factory;
-import test.Implementations.ImplementationC1;
+import Implementations.ImplementationC1;
 
 public class FactoryC1 implements Factory {
     @Override

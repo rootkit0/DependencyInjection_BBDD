@@ -1,12 +1,12 @@
-package test.ComplexTests;
+package ComplexTests;
 
 import common.DependencyException;
 import complex.Factory;
-import test.Implementations.ImplementationA1;
-import test.Implementations.ImplementationB1;
-import test.Implementations.ImplementationC1;
-import test.Interfaces.InterfaceB;
-import test.Interfaces.InterfaceC;
+import Implementations.ImplementationA1;
+import Implementations.ImplementationB1;
+import Implementations.ImplementationC1;
+import Interfaces.InterfaceB;
+import Interfaces.InterfaceC;
 
 public class FactoryA1 implements Factory<ImplementationA1> {
     @Override
