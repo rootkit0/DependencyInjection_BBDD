@@ -8,13 +8,12 @@ public class Container implements Injector {
 
     //Estructures de dades
     private HashMap<String, Object> constants;
-    private HashMap<String, Factory> factories;
-    private HashMap<String, Factory> singleton;
+    private HashMap<String, simple.Factory> factories;
+    private HashMap<String, simple.Factory> singleton;
     private HashMap<String, String[]> dependencies;
 
 
     public Container() {
-        //Inicialitzem les estructures
         this.constants = new HashMap<>();
         this.factories = new HashMap<>();
         this.dependencies = new HashMap<>();
@@ -23,7 +22,6 @@ public class Container implements Injector {
 
     @Override
     public void registerConstant(String name, Object value) throws DependencyException {
-        //Asocia el nom al valor
         if(this.constants.containsKey(name)) {
             throw new DependencyException("Constant " + name + " is already registered");
         }
@@ -70,7 +68,7 @@ public class Container implements Injector {
         }
     }
 
-    //Metode auxiliars
+    //Metode auxiliar
     private Object createFactory(String name, HashMap<String, Factory> hashMap) throws DependencyException {
         try {
             //Obtenim la factoria a crear
